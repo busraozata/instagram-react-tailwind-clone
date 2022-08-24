@@ -1,6 +1,7 @@
 import AuthLayout from "pages/auth";
 import Login from "pages/Login";
 import PrivateRoute from "components/PrivateRoute";
+import Register from "pages/Register";
 const { default: Home } = require("pages/Home");
 
 const routes = [
@@ -16,6 +17,16 @@ const routes = [
       {
         path: "login",
         element: <Login />,
+      },
+    ],
+  },
+  {
+    path: "/auth",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },

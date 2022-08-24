@@ -21,7 +21,7 @@ export default function Input({ label, type = "text", ...props }) {
                     type={inputType}
                     className={
                         classNames({
-                            "px-2 text-xs  w-full  outline-none h-[38px]": true,
+                            "px-2 text-xs bg-transparent w-full outline-none h-[38px]": true,
                             "pt-[10px]": field.value
                         })
                     }
